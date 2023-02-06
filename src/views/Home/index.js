@@ -1,9 +1,12 @@
 import React from "react";
+import * as S from './styles'
 
 
 function Home(){
     return(
-        <h1>Tela de Home</h1>
+        <S.Container>
+            <h1>Tela de Home</h1>
+        </S.Container>
     );
 }
 
