@@ -1,10 +1,10 @@
 import React from "react";
 import * as S from './styles';
 
-const Content = () => {
+const Content = ({ children }) => {
     return(
         <S.Container>
-            <h1>Content</h1>
+            { children }
         </S.Container>
     );
 }

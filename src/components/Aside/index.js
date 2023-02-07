@@ -1,9 +1,6 @@
 import React from "react";
 import * as S from './styles';
 
-import IconSolicita from '../../assets/solicitaMenu.svg'
-
-
 import { 
     MdOutlinePermIdentity,
     MdPlaylistAdd,

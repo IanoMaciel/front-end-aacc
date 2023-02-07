@@ -1,4 +1,4 @@
-import React from "react";
+import React,{children} from "react";
 import * as S from './styles';
 
 //components
@@ -7,12 +7,14 @@ import Aside from '../Aside'
 import Content from '../Content';
 
 
-const Layout = () => {
+const Layout = ({ children }) => {
     return(
         <S.Grid>
             <MainHeader/>
             <Aside/>
-            <Content/>
+            <Content>
+                { children }
+            </Content>
         </S.Grid>
     );
 }
