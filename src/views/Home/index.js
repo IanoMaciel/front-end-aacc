@@ -2,10 +2,10 @@ import React from "react";
 import * as S from './styles'
 
 
-function Home(){
+const Home = () => {
     return(
         <S.Container>
-            <h1>Tela de Home</h1>
+            <h1>Home</h1>
         </S.Container>
     );
 }
