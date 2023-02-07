@@ -2,14 +2,14 @@ import React from "react";
 import GlobalStyles from "./styles/GlobalStyles";
 
 
-import Home from "./views/Home";
+import Layout from "./components/Layout";
 
 
 const App = () => {
     return(
         <>
             <GlobalStyles/>
-            <Home/>
+            <Layout/>
         </>
     );
 }
