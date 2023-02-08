@@ -14,10 +14,10 @@ const Aside = () => {
         <S.Container>
             <S.MenuContainer>
                 <h3>Perfil</h3>
-                <S.MenuItemLink href="#"> <MdOutlinePermIdentity/> Meus dados</S.MenuItemLink>
+                <S.MenuItemLink href="/meuDados"> <MdOutlinePermIdentity/> Meus dados</S.MenuItemLink>
                 <h3>Aproveitamento</h3>
-                <S.MenuItemLink href="#"><MdPlaylistAdd/>Solicitação</S.MenuItemLink>
-                <S.MenuItemLink href="#"><MdOutlineRule/>Status de solicitação</S.MenuItemLink>
+                <S.MenuItemLink href="/SolicitaAproveitamento"><MdPlaylistAdd/>Solicitação</S.MenuItemLink>
+                <S.MenuItemLink href="/Status"><MdOutlineRule/>Status de solicitação</S.MenuItemLink>
             </S.MenuContainer>
         </S.Container>
     );

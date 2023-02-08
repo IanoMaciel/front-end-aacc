@@ -1,18 +1,14 @@
 import React from "react";
 import GlobalStyles from "./styles/GlobalStyles";
 
-import Layout from "./components/Layout";
 
-//pages
-import MeusDados from "./views/MeusDados";
+import Routes from "./routes";
 
 const App = () => {
     return(
         <>
             <GlobalStyles/>
-            <Layout>
-                <MeusDados/>
-            </Layout>
+            <Routes/>
         </>
     );
 }
