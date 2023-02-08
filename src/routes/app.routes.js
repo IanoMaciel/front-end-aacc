@@ -3,10 +3,14 @@ import {
     Switch, Route
 } from 'react-router-dom'
 
+//pages
 import Layout from "../components/Layout";
 import MeusDados from "../views/MeusDados";
 import SolicitaAproveitamento from "../views/SolicitarAproveitamento"
 import Status from "../views/Status";
+
+import Login from "../views/Login";
+import CadAluno from "../views/CadAluno";
 
 
 const AppRoutes = () => {
