@@ -11,6 +11,7 @@ export const Container = styled.div`
     background-image: url('https://user-images.githubusercontent.com/71051791/217574951-d11a4604-8e16-4123-ba89-b0273bd2ac39.svg');
     background-position: right bottom;
     background-repeat: no-repeat;
+    background-size: contain;
 `;
 
 export const Box = styled.div`
