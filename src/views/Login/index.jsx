@@ -12,7 +12,7 @@ const Login = () => {
                     <input type="text" placeholder="Matrícula"/>
                     <input type="password" placeholder="Senha"/>
 
-                    <button type="button">Entrar</button>
+                    <a href="/meuDados">Entrar</a>
                 </S.Form>
 
                 <S.NewAccess>

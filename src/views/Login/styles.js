@@ -11,6 +11,7 @@ export const Container = styled.div`
     background-image: url('https://user-images.githubusercontent.com/71051791/217574951-d11a4604-8e16-4123-ba89-b0273bd2ac39.svg');
     background-position: right bottom;
     background-repeat: no-repeat;
+    background-size: contain;
 `;
 
 export const Box = styled.div`
@@ -40,14 +41,18 @@ export const Form = styled.div`
     filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.25));
 
 
-    input, button {
+    input, a {
         width: 300px;
         padding: 15px;
         margin: 10px 0;
         border-radius: 15px;
     }
 
-    button {
+    a {
+        display: flex;
+        justify-content: center;
+        
+        text-decoration: none;
         margin-top: 30px;
         font-weight: bold;
         color: #fff;
