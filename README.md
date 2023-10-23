@@ -52,6 +52,9 @@ Essa camada conterá os controladores necessários para interação da camada Vi
 ## Diagrama de Classe
 ![Diagrama de Classe]('./../public/assets/ClassDiagram.png)
 
+# Protótipo de Alta Fidelidade
+![Protótipo de Alta]('./../public/assets/prototype.png)
+
 # Como executar esta aplicação?
 Para a executar esta aplicação basta seguir os passos abaixo:
 
