@@ -17,7 +17,7 @@ import Home from "../views/Home";
 const AppRoutes = () => {
     return(
             <Switch>
-                <Route path="/home" exact component={Home}/>
+                <Route path="/" exact component={Home}/>
                 <Route path="/login" exact component={Login}/>
                 <Route path="/cadAluno" exact component={CadAluno}/>
                 <Layout>
