@@ -41,18 +41,14 @@ export const Form = styled.div`
     filter: drop-shadow(6px 6px 10px rgba(0, 0, 0, 0.25));
 
 
-    input, a {
+    input, button {
         width: 300px;
         padding: 15px;
         margin: 10px 0;
         border-radius: 15px;
     }
 
-    a {
-        display: flex;
-        justify-content: center;
-        
-        text-decoration: none;
+    button {
         margin-top: 30px;
         font-weight: bold;
         color: #fff;
