@@ -1,6 +1,5 @@
 import React from "react";
 import * as S from './styles'
-import fundo from '../../assets/logo.svg'
 
 const CadAluno = () => {
     return(

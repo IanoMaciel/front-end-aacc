@@ -1,24 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 95%;
-    height: 91%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    border-radius: 20px;
-    background-color: #FFFFFF;
-`;
-
-export const Title = styled.h3`
+    h1 {
         font-size: 24px;
-        margin-left: 5%;
-        margin-top: 61px;
-        color: #000;
+        margin-bottom: 30px;
+    }
 `;
+
 
 export const Form = styled.div`
     display: flex;
@@ -27,7 +15,7 @@ export const Form = styled.div`
     width: 100%;
 
     div {
-        width: 90%; 
+        width: 100%; 
         display: flex;
         justify-content: space-between;
     }
@@ -37,7 +25,7 @@ export const Form = styled.div`
     }
 
     select, a, textarea {
-        width: 90%;
+        width: 100%;
         margin: 14px 0;
         background-color: #EDEDED;
         padding: 15px;

@@ -1,21 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 95%;
-    height: 91%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    border-radius: 20px;
-    background-color: #FFFFFF;
-
     h3 {
         font-size: 24px;
-        margin-left: 5%;
-        margin-top: 61px;
+        margin-bottom: 30px;
     }
 `;
 
@@ -26,8 +14,8 @@ export const Form = styled.div`
     width: 100%;
 
     input {
-        width: 90%;
-        margin: 14px 0;
+        width: 100%;
+        margin-bottom: 14px;
         background-color: #EDEDED;
         padding: 15px;
         border-radius: 20px;
@@ -35,17 +23,17 @@ export const Form = styled.div`
     }
 
     div {
-        width: 90%; 
+        width: 100%; 
         display: flex;
         justify-content: space-between;
 
         align-items: center;
     }
 
-    div>input {
-        width: 450px;
-        margin: 10px 0px;
+    div > input {
+        width: 470px;
         //box-sizing: border-box;
+        margin-bottom: 14px;
     }
 
     button {

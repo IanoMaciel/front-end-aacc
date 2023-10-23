@@ -7,7 +7,7 @@ import { FaPaperclip } from "react-icons/fa";
 const SolicitaAproveitamento = () => {
     return(
         <S.Container>
-            <S.Title>Solicitar Aproveitamento</S.Title>
+            <h1>Solicitar Aproveitamento</h1>
             <S.Form>
                 <div>
                     <select>

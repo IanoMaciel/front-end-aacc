@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Sobre o Documento
+Este documento apresenta uma visão geral da aplicação desenvolvida durante a disciplina Engenharia de Aplicações Web, ministrada no período de 2022/1 pelo Prof. Alternei de Souza Brito.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Autores
+- [Iano Maciel](https://github.com/IanoMaciel)
+- [Geise Saunier](https://github.com/GeiseSaunier)
+- [Antônio Alberto](https://github.com/antonioalberto-dev)
 
-## Available Scripts
+# Descrição Geral do Sistema
+A proposta deste produto é oferecer uma solução para submeter horas relacionadas as Atividades Acadêmico-Científico e Cultural (AACC). A AACC é uma resolução que regulamenta as atividades dos cursos de graduação da Universidade Federal do Amazonas – UFAM e cada curso tem suas características em quantitativos de horas. Para o curso de Bacharelado em Engenharia de Software, por exemplo, o discente deverá obter 170 horas, sendo elas distribuídas em 3 modalidades: ensino, extensão e pesquisa. 
 
-In the project directory, you can run:
+Sabe-se que isto, atualmente, é feito manualmente através do Google Forms, no qual o coordenador do curso o disponibiliza e os discentes submetem suas horas, certificados, entre outros. A proposta desta ferramenta é facilitar o envio desses documentos, além de permitir ao aluno consultar qual modalidade ele necessita concluir para o preenchimento de suas horas. 
 
-### `npm start`
+Incialmente, a ferramenta será desenvolvida apenas para o curso de Bacharelado em Engenharia de Software, como nota final para a disciplina Engenharia de Aplicações Web. Entretanto, a aplicação será open-source e ficará disponível para que pessoas interessadas em expandir para outros cursos da UFAM consigam acessar e implementar as funcionalidades essenciais para o funcionamento deste.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Descrição dos Atores
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O sistema apresenta 4 atores, sendo esses usuários diferenciados pelas funcionalidades específicas de cada um: Aluno, Comissão, Professor e Administrador. 
 
-### `npm test`
+**Aluno:** este usuário poderá realizar o cadastro de suas informações utilizando os seguintes dados de matrícula institucional: nome completo, telefone e e-mail. Ele poderá submeter aproveitamento de horas enviando um documento comprobatório (certificado autenticado, declaração) e especificando sua modalidade (ensino, extensão e pesquisa).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Comissão:** a comissão de avaliação de AACC é constituída por até 4 (quatro) docentes do curso, nomeados pelo colegiado deste com mandato de 2 (dois) anos renováveis por igual período. O ator comissão é responsável por autenticar as horas enviadas pelos alunos, além de ter a possibilidade de editar qualquer campo do formulário e encaminhar para o ator Professor caso seja necessário a autenticação dele. 
 
-### `npm run build`
+**Professor:**  Este ator poderá realizar a validação de horas se, e somente se, o ator Comissão notificá-lo. Caso contrário, ele poderá deferir ou indeferir a solicitação de aproveitamento de horas enviada pelo aluno.
+Administrador: Responsável por cadastrar, remover e atualizar dados da Comissão.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Arquitetura de Software
+Esta seção descreve as características da arquitetura utilizada no desenvolvimento do Uni+. Para tal, foi adotada a MVC, sendo está descrita abaixo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Estrutura MVC aplicada ao sistema UNI+
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Camada Model**
 
-### `npm run eject`
+Essa camada conterá todas as interações necessárias para integrar o banco de dados MondoDB com os objetos da view através do controller, onde separa todo tipo de  linguagem padrão de banco de dados, da camada view. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Camada View**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Essa camada conterá todas as interfaces visuais, na qual o aluno interagirá diretamente com os demais usuários do sistema. Sendo subdividida em:  
+- Visual: contém a página Web, os formulários, e as informações necessárias para o aproveitamento de horas complementares.
+- Controles: Contém todos os códigos necessários para comunicação entre a camada de controller ou model, com a página Web (Ajax).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Camada Controller**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Essa camada conterá os controladores necessários para interação da camada View com a camada model. Esses controladores servem como intermediários entre as duas outras camadas. A interação deve ser realizada quando houver uma aquisição da camada view.
 
-## Learn More
+![Arquitetura MVC]('./../public/assets/arquitetura.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Diagrama UML
+## Caso de Uso
+![Diagrama de Caso de Uso]('./../public/assets/UseCase.jpg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Diagrama de Classe
+![Diagrama de Classe]('./../public/assets/ClassDiagram.png)
 
-### Code Splitting
+# Como executar esta aplicação?
+Para a executar esta aplicação basta seguir os passos abaixo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone este repositório:
 
-### Analyzing the Bundle Size
+```
+    https://github.com/IanoMaciel/front-end-aacc
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. No terminal, utilize "cd front-end-aacc" para entrar no diretório. Em seguida, utilize o comando a seguir para instalar as dependências:
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+yarn i
+```
+ou
 
-### Advanced Configuration
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Por fim, utilize o comando ```yarn dev``` ou ```npm dev``` para executar a aplicação
