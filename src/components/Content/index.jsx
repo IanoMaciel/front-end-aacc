@@ -4,7 +4,9 @@ import * as S from './styles';
 const Content = ({ children }) => {
     return(
         <S.Container>
-            { children }
+            <S.ContainerContent>
+                { children }
+            </S.ContainerContent>
         </S.Container>
     );
 }
