@@ -1,3 +1,11 @@
+# Sumário
+- [Sobre o Documento](https://github.com/IanoMaciel/front-end-aacc#sobre-o-documento)
+- [Autores](https://github.com/IanoMaciel/front-end-aacc#autores)
+- [Descrição Geral do Sistema](https://github.com/IanoMaciel/front-end-aacc#descri%C3%A7%C3%A3o-geral-do-sistema)
+- [Diagrama UML](https://github.com/IanoMaciel/front-end-aacc#diagrama-uml)
+- [Protótipo de Alta Fidelidade](https://github.com/IanoMaciel/front-end-aacc#prot%C3%B3tipo-de-alta-fidelidade)
+- [Como executar esta aplicação?](https://github.com/IanoMaciel/front-end-aacc#como-executar-esta-aplica%C3%A7%C3%A3o)
+
 # Sobre o Documento
 Este documento apresenta uma visão geral da aplicação desenvolvida durante a disciplina Engenharia de Aplicações Web, ministrada no período de 2022/1 pelo Prof. Alternei de Souza Brito.
 
@@ -13,7 +21,7 @@ Sabe-se que isto, atualmente, é feito manualmente através do Google Forms, no 
 
 Incialmente, a ferramenta será desenvolvida apenas para o curso de Bacharelado em Engenharia de Software, como nota final para a disciplina Engenharia de Aplicações Web. Entretanto, a aplicação será open-source e ficará disponível para que pessoas interessadas em expandir para outros cursos da UFAM consigam acessar e implementar as funcionalidades essenciais para o funcionamento deste.
 
-# Descrição dos Atores
+## Descrição dos Atores
 
 O sistema apresenta 4 atores, sendo esses usuários diferenciados pelas funcionalidades específicas de cada um: Aluno, Comissão, Professor e Administrador. 
 
